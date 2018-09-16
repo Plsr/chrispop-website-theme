@@ -1,5 +1,26 @@
 .bIntroSection
+  position: relative
   padding: 50px 20px
+  overflow: hidden
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    border-radius: 50%
+    background-color: $accent-color
+    opacity: .2
+
+  &:before
+    left: -80px
+    top: 40px
+    width: 200px
+    height: 200px
+
+  &:after
+    right: -60px
+    bottom: -60px
+    width: 120px
+    height: 120px
 
   &-title, &-subline
     font-size: 24px
